@@ -1,9 +1,23 @@
-<input
-  class="form-control"
-  type="text"
-  [placeholder]=""
-  >
 
-<div class="cards">
-  <app-card *ngFor="let card of [1,2,3,4,5,6,7,8,9,10]"></app-card>
+<div
+  class="search-results"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="100"
+  (scrolled)="onScroll()"
+>
+
+  <input
+    class="form-control"
+    type="text"
+    [placeholder]="">
+
+  <div class="cards">
+    <app-card *ngFor="let card of cards" [card]="card"></app-card>
+  </div>
+
+
+<!-- el [card] hace referencia al objeto Card de la interface pero llamado desde el componente hijo CardComponent -->
+<!-- el "card" hace referencia al card del ngFor del array cards -->
+
 </div>

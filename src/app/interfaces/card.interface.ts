@@ -1,8 +1,8 @@
-export interface CardResponse {
-  data: Datum[];
-}
+// export interface CardResponse {
+//   data: Card[];
+// }
 
-export interface Datum {
+export interface Card {
   id:          number;
   name:        string;
   type:        string;
