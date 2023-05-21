@@ -21,7 +21,7 @@ body {
 }
 
 app-to-top {
-  position: sticky;
+  position: fixed;
   bottom: 20px;
   z-index: 2;
 }

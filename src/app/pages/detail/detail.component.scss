@@ -47,7 +47,6 @@
     -o-background-size: cover;
     background-size: cover;
 
-
     // design
     width: 100%;
     max-width: 500px;
@@ -122,23 +121,18 @@
 
   // structure
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  button {
-    // color
-    background-color: inherit;
-
-    // design
-    border: none;
-    border-radius: 100%;
-
-    cursor: pointer;
-  }
+  justify-content: left;
 
   .back {
     // color
     background-color: #50320779;
+
+    // design
+    padding: 3px;
+    border: none;
+    border-radius: 100%;
+
+    cursor: pointer;
 
     // animation
     transition: all .2s;
