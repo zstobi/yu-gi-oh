@@ -7,12 +7,28 @@
   (scrolled)="onScroll()"
 >
 
-  <input
-    class="form-control"
-    type="text"
-    [placeholder]=""
-    [formControl]="cardTextFC"
-  >
+  <nav>
+    <input
+      class="form-control"
+      type="text"
+      [placeholder]=""
+      [formControl]="cardTextFC"
+    >
+
+    <div class="tools">
+
+      <button>
+        <img src="assets/bandera-usa.png" alt="EEUU" class="icon" *ngIf="">
+        <img src="assets/bandera-arg.png" alt="ARG" class="icon">
+      </button>
+
+      <hr>
+
+      <button>
+        <i class="devicon-github-original"></i>
+      </button>
+    </div>
+  </nav>
 
   <div class="cards">
     <app-card *ngFor="let card of cards" [card]="card"></app-card>
@@ -23,3 +39,5 @@
 <!-- el "card" hace referencia al card del ngFor del array cards -->
 
 </div>
+
+<app-to-top></app-to-top>

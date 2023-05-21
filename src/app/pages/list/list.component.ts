@@ -45,7 +45,6 @@ export class ListComponent {
   searchCards(){
     // if (this.cardTextFC.value === ''){
       this.cardSvce.getCards(this.offset).subscribe( res => {
-        console.log(res);
         this.cards = [...this.cards, ...res];
 
         // este ... es el spread operator, de esta manera no reemplaza, es un merge o una mezcla entre las dos respuestas

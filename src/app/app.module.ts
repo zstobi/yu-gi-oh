@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MarketNamePipe } from './pipes/market-name.pipe';
+import { ToTopComponent } from './components/to-top/to-top.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MarketNamePipe } from './pipes/market-name.pipe';
     CardComponent,
     ListComponent,
     DetailComponent,
-    MarketNamePipe
+    MarketNamePipe,
+    ToTopComponent
   ],
   imports: [
     BrowserModule,

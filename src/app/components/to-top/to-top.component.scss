@@ -1,0 +1,28 @@
+
+.toTop {
+  // color
+  background-color: #50320779;
+
+  // design
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+
+  cursor: pointer;
+
+  // animation
+  transition: all .2s;
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+}
+.toTop:hover {
+  // color
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}

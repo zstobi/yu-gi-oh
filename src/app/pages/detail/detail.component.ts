@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 import { Card } from 'src/app/interfaces/card.interface';
 import { CardService } from 'src/app/services/card.service';
@@ -15,6 +15,7 @@ export class DetailComponent {
   card$!:Observable<Card>;
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private cardSvce: CardService
   ) { }
@@ -31,6 +32,10 @@ export class DetailComponent {
 
     this.card$ = this.cardSvce.getCardById(this.id);
 
+  }
+
+  goBack(){
+    this.router.navigate(['']);
   }
 
 }

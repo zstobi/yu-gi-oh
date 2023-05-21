@@ -5,44 +5,58 @@
   </div>
 
   <div class="bottom">
-    <h2>{{card.name}}</h2>
-    <div class="item">
+
+    <div class="btns">
+      <button class="material-symbols-outlined back" (click)="goBack()">
+          arrow_back
+      </button>
+
+      <button>
+        <img src="assets/bandera-usa.png" alt="EEUU" class="icon" *ngIf="">
+        <img src="assets/bandera-arg.png" alt="ARG" class="icon">
+      </button>
+    </div>
+
+    <h2 class="title">{{card.name}}</h2>
+    <div class="desc">
       <p class="description">{{card.desc}}</p>
     </div>
 
-    <div class="item">
-      <h3 class="title">Frame Type:</h3>
-      <p class="description">{{card.frameType}}</p>
+    <div class="attr">
+      <div class="item">
+        <h3 class="title">Frame Type:</h3>
+        <p class="description2">{{card.frameType}}</p>
+      </div>
+
+      <div class="item">
+        <h3 class="title">Type:</h3>
+        <p class="description2">{{card.type}}</p>
+      </div>
+
+      <div class="item">
+        <h3 class="title">Race:</h3>
+        <p class="description2">{{card.race}}</p>
+      </div>
+
+      <div class="item">
+        <h3 class="title">Attack:</h3>
+        <p class="atk description2">{{card.atk}}</p>
+      </div>
+
+      <div class="item">
+        <h3 class="title">Defense:</h3>
+        <p class="def description2">{{card.def}}</p>
+      </div>
+
+      <div class="item">
+        <h3 class="title">Level:</h3>
+        <p class="lev description2">{{card.level}}</p>
+      </div>
     </div>
 
-    <div class="item">
-      <h3 class="title">Type:</h3>
-      <p class="description">{{card.type}}</p>
-    </div>
-
-    <div class="item">
-      <h3 class="title">Race:</h3>
-      <p class="description">{{card.race}}</p>
-    </div>
-
-    <div class="item">
-      <h3 class="title">Attack:</h3>
-      <p class="description">{{card.atk}}</p>
-    </div>
-
-    <div class="item">
-      <h3 class="title">Defense:</h3>
-      <p class="description">{{card.def}}</p>
-    </div>
-
-    <div class="item">
-      <h3 class="title">Level:</h3>
-      <p class="description">{{card.level}}</p>
-    </div>
-
-    <table class="table">
+    <table>
       <thead>
-        <tr>
+        <tr class="topics">
           <th scope="col">Market</th>
           <th scope="col">Price</th>
         </tr>

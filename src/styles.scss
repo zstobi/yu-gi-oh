@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "@fontsource/andada-pro";
+@import "@fontsource/karmilla";
+@import "@fontsource/baumans";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+* {
+  font-family: 'Cinzel';
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+app-to-top {
+  position: sticky;
+  bottom: 20px;
+  z-index: 2;
+}

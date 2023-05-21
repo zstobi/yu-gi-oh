@@ -1,15 +1,120 @@
 
 
+.search-results {
 
+  // design
+  margin-top: 20px;
 
+  // strucure
+  display: grid;
+  gap: 30px;
+}
 
+nav {
+  // color
+  // background-color: #be5600;
+  background-color: #00000000;
 
+  // design
+  height: 50px;
+  // border: 4px double #703200;
+  // border: 4px double #fff;
+
+  // structure
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media ( max-width: 800px ){
+
+    // design
+    height: 100%;
+    width: 100%;
+
+    // structure
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-rows: repeat(2,1fr);
+
+    .tools {
+      // structure
+      grid-row: 1;
+    }
+  }
+
+  input {
+
+    // font
+    font-family: 'Andada pro';
+
+    // design
+    margin: 10px;
+    padding-left: 10px;
+    height: 28px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+    // animation
+    transition: all .3s;
+
+    @media only screen and (min-width: 800px){
+      width: 500px;
+    }
+  }
+
+  input:focus {
+    box-shadow: 0px 0px 10px #fff;
+  }
+
+  .tools {
+    // color
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    // background-color: #000;
+
+    // design
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    border-bottom: 2px solid #ffffff6b;
+
+    // structure
+    display: flex;
+    gap: 10px;
+
+    hr {
+      border: 1px solid #ffffff6b;
+      margin: 0;
+      height: 100%;
+    }
+
+    button {
+      // color
+      background-color: inherit;
+
+      // design
+      border: none;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+        font-size: 25px;
+      }
+    }
+
+    @media ( max-width: 800px ){
+      height: 25px;
+    }
+  }
+}
 
 .cards {
-
   // structure
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(12em,1fr));
-  gap: .5em;
+  gap: 1.3em;
 }
