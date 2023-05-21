@@ -1,4 +1,4 @@
-YU GI OH!
+# YU-GI-OH!
 
 Eng - Card finder between +12600 cards from Yu Gi Oh.
 
